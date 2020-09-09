@@ -6,7 +6,7 @@
 
     <groupId>in.zapr.druid</groupId>
     <artifactId>druidry</artifactId>
-    <version>3.2-SNAPSHOT</version>
+    <version>3.2-CUSTOM</version>
 
     <name>Druidry - Druid Java Client</name>
     <description>Druidry is an open-source Java based utility library which supports creating
@@ -235,6 +235,14 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/archichen/druidry</url>
+        </repository>
+    </distributionManagement>
+
     <developers>
         <developer>
             <name>Gagan Gupta</name>
@@ -261,16 +269,5 @@
         <developerConnection>scm:git:ssh://github.com:zapr-oss/druidry.git</developerConnection>
         <url>https://github.com/zapr-oss/druidry</url>
     </scm>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
 </project>

@@ -33,7 +33,6 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 public
 class DruidSegmentMetadataQuery extends DruidMetadataQuery {
-
     public List<Interval> intervals;
     public String toInclude;
     public String merge;
